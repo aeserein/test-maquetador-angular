@@ -1,15 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { Testimony } from '../../classes/testimony';
 
 @Component({
-  selector: 'app-testimonial-card',
-  templateUrl: './testimonial-card.component.html',
-  styleUrls: ['./testimonial-card.component.scss']
+	selector: 'app-testimonial-card',
+	templateUrl: './testimonial-card.component.html',
+	styleUrls: ['./testimonial-card.component.scss']
 })
-export class TestimonialCardComponent implements OnInit {
+export class TestimonialCardComponent {
 
-  constructor() { }
+	@Input() testimony! : Testimony;
 
-  ngOnInit(): void {
-  }
-
+	constructor() { }
 }

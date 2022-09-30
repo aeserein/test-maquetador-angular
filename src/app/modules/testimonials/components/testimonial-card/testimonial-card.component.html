@@ -1,1 +1,26 @@
-<p>testimonial-card works!</p>
+<mat-card class="testimony">
+
+    <mat-card-header>
+        <img mat-card-avatar [src]="testimony.avatar">
+        <mat-card-title>{{ testimony.name }}</mat-card-title>
+        <mat-card-subtitle>{{ testimony.ocupation }}</mat-card-subtitle>
+    </mat-card-header>
+
+    <mat-card-content class="testimonyContent">
+        <p>
+            {{ testimony.textBody }}
+        </p>
+    </mat-card-content>
+
+    <mat-card-footer>
+        <div class="flex space-between">
+            <span class="color_black_inactive">
+                {{ testimony.date /1000 | date }}
+            </span>
+            <span class="color_accent_900">
+                {{ testimony.sector }}
+            </span>
+        </div>
+    </mat-card-footer>
+
+</mat-card>

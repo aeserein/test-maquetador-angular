@@ -7,10 +7,11 @@ const routes: Routes = [
     path: '',
     component: MainLayoutComponent,
     children: [
-      { path: '', loadChildren: () => import('./modules/news/news.module').then(m => m.NewsModule) },
       { path: '', loadChildren: () => import('./modules/testimonials/testimonials.module').then(m => m.TestimonialsModule) },
+      { path: '', loadChildren: () => import('./modules/news/news.module').then(m => m.NewsModule) },
+      { path: '', loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule) },
     ]
-  }
+  },
 ];
 
 @NgModule({
