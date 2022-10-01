@@ -6,6 +6,8 @@ import { TestimonialCardComponent } from './components/testimonial-card/testimon
 import { ExampleMenuComponent } from './menus/example-menu/example-menu.component';
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from '@angular/material/button';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
 	declarations: [
@@ -17,7 +19,12 @@ import { MatButtonModule } from '@angular/material/button';
 		CommonModule,
 		TestimonialsRoutingModule,
 		MatCardModule,
-		MatButtonModule
+		MatButtonModule,
+		CarouselModule,
+		FontAwesomeModule
+	],
+	exports: [
+		TestimonialsPageComponent
 	]
 })
 export class TestimonialsModule { }

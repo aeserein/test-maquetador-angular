@@ -1,5 +1,8 @@
 @import "./vars";
 
+* {
+    box-sizing: border-box;
+}
 .intro-component-animation {
 	transition: $animation;
 	-moz-transition: $animation;

@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Testimony } from '../../classes/testimony';
+import { OwlOptions } from 'ngx-owl-carousel-o';
+import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
 	selector: 'app-testimonials-page',
@@ -8,10 +10,40 @@ import { Testimony } from '../../classes/testimony';
 })
 export class TestimonialsPageComponent implements OnInit {
 
-	testimonyMock : Testimony[];
+	testimoniesMock : Testimony[] = [];
+	customOptions : OwlOptions;
+	faCoffee = faCoffee;
+
 	constructor() {
-		this.testimonyMock = [];
-		this.testimonyMock[0] = new Testimony(
+		this.loadMockData();
+		this.customOptions = {
+			loop: true,
+			mouseDrag: true,
+			touchDrag: true,
+			pullDrag: true,
+			dots: true,
+			navSpeed: 700,
+			navText: ["<", ">"],
+			responsive: {
+			  0: {
+				items: 1
+			  },
+			  700: {
+				items: 2
+			  },
+			  1000: {
+				items: 3
+			  }
+			},
+			nav: true
+		}
+	}
+
+	ngOnInit(): void {
+	}
+
+	private loadMockData() : void {
+		this.testimoniesMock[0] = new Testimony(
 			"https://material.angular.io/assets/img/examples/shiba1.jpg",
 			"Nancy Briggs",
 			"Practitioner",
@@ -19,7 +51,7 @@ export class TestimonialsPageComponent implements OnInit {
 			new Date().getTime(),
 			"Fear/ Phobia- Afraid to Drive"
 		);
-		this.testimonyMock[1] = new Testimony(
+		this.testimoniesMock[1] = new Testimony(
 			"https://material.angular.io/assets/img/examples/shiba1.jpg",
 			"Adreia Bin",
 			"Member",
@@ -27,7 +59,7 @@ export class TestimonialsPageComponent implements OnInit {
 			new Date().getTime(),
 			"Maravilhoso"
 		);
-		this.testimonyMock[2] = new Testimony(
+		this.testimoniesMock[2] = new Testimony(
 			"https://material.angular.io/assets/img/examples/shiba1.jpg",
 			"Charlene Cooper",
 			"Member",
@@ -35,7 +67,7 @@ export class TestimonialsPageComponent implements OnInit {
 			new Date().getTime(),
 			"Search & Rescue Canine"
 		);
-		this.testimonyMock[3] = new Testimony(
+		this.testimoniesMock[3] = new Testimony(
 			"https://material.angular.io/assets/img/examples/shiba1.jpg",
 			"NOMBRE 4",
 			"OCUPACIÓN 4",
@@ -43,7 +75,7 @@ export class TestimonialsPageComponent implements OnInit {
 			new Date().getTime(),
 			"SECTOR 4"
 		);
-		this.testimonyMock[4] = new Testimony(
+		this.testimoniesMock[4] = new Testimony(
 			"https://material.angular.io/assets/img/examples/shiba1.jpg",
 			"NOMBRE 5",
 			"OCUPACIÓN 5",
@@ -52,8 +84,4 @@ export class TestimonialsPageComponent implements OnInit {
 			"SECTOR 5"
 		);
 	}
-
-	ngOnInit(): void {
-	}
-
 }

@@ -21,7 +21,7 @@ import { CoreCodaModule } from './modules/core-coda/core-coda.module';
     BrowserAnimationsModule,
     RouterModule,
     CoreCodaModule,
-
+    
     // Angular Material
     MatDialogModule,
     MatMenuModule,

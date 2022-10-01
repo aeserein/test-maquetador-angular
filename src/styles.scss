@@ -104,6 +104,9 @@ $custom-typography: mat-typography-config($font-family: '"DM Sans", sans-serif')
 @include angular-material-typography($custom-typography);
 @include mat-base-typography($custom-typography);
 
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import '~ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import "./assets/styles/owl-carousel";
 @import "./assets/styles/mat-menu";
 @import "./assets/styles/mat-card";
 @import "./assets/styles/typography";

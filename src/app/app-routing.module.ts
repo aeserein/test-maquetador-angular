@@ -3,19 +3,17 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainLayoutComponent } from './modules/core-coda/components/main-layout/main-layout.component';
 
 const routes: Routes = [
-  {
-    path: '',
-    component: MainLayoutComponent,
-    children: [
-      { path: '', loadChildren: () => import('./modules/testimonials/testimonials.module').then(m => m.TestimonialsModule) },
-      { path: '', loadChildren: () => import('./modules/news/news.module').then(m => m.NewsModule) },
-      { path: '', loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule) },
-    ]
-  },
+	{
+		path: '',
+		component: MainLayoutComponent,
+		children: [
+			{ path: '', loadChildren: () => import('./modules/home/home.module').then(m => m.HomeModule) },
+		]
+	},
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+	imports: [RouterModule.forRoot(routes)],
+	exports: [RouterModule]
 })
 export class AppRoutingModule { }
