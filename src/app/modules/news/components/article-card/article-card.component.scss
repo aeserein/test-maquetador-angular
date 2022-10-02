@@ -1,0 +1,34 @@
+mat-card {
+	display: flex;
+	padding: 0;
+	margin-bottom: 20px;
+}
+.mat-card-header {
+	margin: 0px -16px;
+}
+
+.mat-card-content {
+	margin-bottom: 8px;
+}
+.mat-card-title {
+	margin-bottom: 6px;
+}
+.card_content {
+	flex: 1;
+}
+.imageWrapper {
+	width: 24%;
+	margin-left: 20px;
+}
+.image {
+	width: 100%;
+	display: block;
+	border-radius: 5px;
+}
+
+.mat-card-avatar {
+	width: 24px;
+	height: 24px;
+	display: block;
+	margin-right: 10px;
+}

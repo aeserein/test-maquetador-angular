@@ -1,3 +1,31 @@
-<p>article-card works!</p>
+<mat-card class="mat-elevation-z0">
 
-<app-article-card></app-article-card>
+    <div class="card_content">
+        <mat-card-header>
+            <mat-card-title>{{ news.title }}</mat-card-title>
+        </mat-card-header>
+    
+        <mat-card-content class="menem">
+            <p>
+                {{ news.textBody }}
+            </p>
+        </mat-card-content>
+    
+        <mat-card-footer>
+            <div class="flex space-between">
+                <span class="flex alignItems-center color_black_inactive">
+                    {{ news.date /1000 | date }}
+                </span>
+                <span class="flex alignItems-center">
+                    <img mat-card-avatar [src]="news.author_img">
+                    {{ news.author_name }}
+                </span>
+            </div>
+        </mat-card-footer>
+    </div>
+    
+    <div class="imageWrapper">
+        <img class="image" [src]="news.img">
+    </div>
+    
+</mat-card>

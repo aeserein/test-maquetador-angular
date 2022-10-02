@@ -1,1 +1,5 @@
-<p>news-list works!</p>
+<div class="articleCardWrapper">
+    <ng-container *ngFor="let n of mockNews">
+        <app-article-card [news]="n"></app-article-card>
+    </ng-container>
+</div>

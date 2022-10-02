@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { NewsListComponent } from './components/news-list/news-list.component';
 import { SubscribeNewsletterComponent } from './components/subscribe-newsletter/subscribe-newsletter.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
 	declarations: [
@@ -22,8 +23,8 @@ import { SubscribeNewsletterComponent } from './components/subscribe-newsletter/
 		ExampleModalComponent,
 		NewsletterModalComponent,
   		UserInputsComponent,
-    NewsListComponent,
-    SubscribeNewsletterComponent
+		NewsListComponent,
+		SubscribeNewsletterComponent
 	],
 	imports: [
 		CommonModule,
@@ -31,7 +32,8 @@ import { SubscribeNewsletterComponent } from './components/subscribe-newsletter/
 		MatGridListModule,
 		MatInputModule,
 		MatIconModule,
-		MatSelectModule
+		MatSelectModule,
+		MatCardModule
 	],
 	exports: [
 		NewsPageComponent
