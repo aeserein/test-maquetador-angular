@@ -1,0 +1,17 @@
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    height: 200px;
+}
+td {
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+}
+.tdNews {
+    border-left: none;
+    width: calc(75%);
+}
+.tdNewsletter {
+    border-right: none;
+    width: calc(25%);
+}

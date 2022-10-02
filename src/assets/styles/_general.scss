@@ -96,14 +96,8 @@
 .space-between {
 	justify-content: space-between;
 }
-/* #endregion */
-
-/* #region Color classes */
-.color_black_inactive {
-	color: $black_inactive;
-}
-.color_accent_900 {
-	color: $color_accent_900;
+.fullWidth {
+	width: 100%;
 }
 /* #endregion */
 

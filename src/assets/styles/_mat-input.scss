@@ -1,0 +1,12 @@
+@import "./vars";
+
+mat-form-field.noUpperPadding .mat-form-field-flex {
+	padding-top: 0 !important;
+}
+mat-form-field.noUpperPadding .mat-form-field-prefix {
+	transform: translateY(6px);
+	margin-right: 10px;
+}
+mat-form-field.noUpperPadding .mat-select-arrow {
+	transform: translateY(6px);
+}

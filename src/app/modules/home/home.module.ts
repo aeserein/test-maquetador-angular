@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { TestimonialsModule } from '../testimonials/testimonials.module';
+import { NewsModule } from '../news/news.module';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { TestimonialsModule } from '../testimonials/testimonials.module';
 	imports: [
 		CommonModule,
 		HomeRoutingModule,
-		TestimonialsModule
+		TestimonialsModule,
+		NewsModule
 	]
 })
 export class HomeModule { }

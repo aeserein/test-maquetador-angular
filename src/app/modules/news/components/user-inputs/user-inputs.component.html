@@ -1,0 +1,32 @@
+<form action="">
+    <mat-grid-list cols="4" rowHeight="100px" gutterSize="20px">
+
+        <mat-grid-tile colspan="2">
+            <mat-form-field class="fullWidth noUpperPadding" appearance="fill" floatLabel='never'>
+                <input matInput type="search" placeholder="Search...">
+                <mat-icon matPrefix>search</mat-icon>
+            </mat-form-field>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="1">
+            <mat-form-field class="fullWidth noUpperPadding" appearance="fill">
+                <mat-select [(value)]="selectedLanguage">
+                    <mat-option *ngFor="let l of languages, let i = index" [value]="i">
+                        {{l}}
+                    </mat-option>
+                </mat-select>
+              </mat-form-field>
+        </mat-grid-tile>
+
+        <mat-grid-tile colspan="1">
+            <mat-form-field class="fullWidth noUpperPadding" appearance="fill">
+                <mat-select [(value)]="selectedCourse">
+                    <mat-option *ngFor="let c of courses, let i = index" [value]="i">
+                        {{c}}
+                    </mat-option>
+                </mat-select>
+              </mat-form-field>
+        </mat-grid-tile>
+
+    </mat-grid-list>
+</form>

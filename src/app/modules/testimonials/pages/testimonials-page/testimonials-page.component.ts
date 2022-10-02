@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Testimony } from '../../classes/testimony';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { faCoffee } from '@fortawesome/free-solid-svg-icons';
 
 @Component({
 	selector: 'app-testimonials-page',
@@ -12,7 +11,6 @@ export class TestimonialsPageComponent implements OnInit {
 
 	testimoniesMock : Testimony[] = [];
 	customOptions : OwlOptions;
-	faCoffee = faCoffee;
 
 	constructor() {
 		this.loadMockData();
@@ -31,7 +29,7 @@ export class TestimonialsPageComponent implements OnInit {
 			  700: {
 				items: 2
 			  },
-			  1000: {
+			  1100: {
 				items: 3
 			  }
 			},
