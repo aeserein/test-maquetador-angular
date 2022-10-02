@@ -1,1 +1,70 @@
-<p>newsletter-modal works!</p>
+<div class="wrapper">
+	<h1 mat-dialog-title class="fw400 fs_italic display5 line-height_unset text-align_center">
+		Sign up today for the
+		<br>
+		<span>
+			Lorem Newsletter!
+		</span>
+	</h1>
+	
+	<mat-dialog-content class="mat-typography">
+		<form class="example-form">
+			<mat-form-field class="fullWidth" appearance="fill">
+				<mat-label>Email address</mat-label>
+                <input matInput type="email">
+			</mat-form-field>
+	
+			<mat-form-field class="fullWidth" appearance="fill">
+				<mat-label>First name</mat-label>
+				<input matInput type="text">
+			</mat-form-field>
+
+			<mat-form-field class="fullWidth" appearance="fill">
+				<mat-label>Last name</mat-label>
+				<input matInput type="text">
+			</mat-form-field>
+
+			<mat-form-field class="fullWidth" appearance="fill">
+				<mat-label>Country</mat-label>
+				<input matInput type="text">
+			</mat-form-field>
+
+			<mat-form-field class="fullWidth" appearance="fill">
+				<mat-label>Language</mat-label>
+				<mat-select >
+					<mat-option *ngFor="let l of languages, let i = index" [value]="i">
+						{{l}}
+					</mat-option>
+				</mat-select>
+			</mat-form-field>
+
+			<mat-form-field class="fullWidth" appearance="fill">
+				<mat-label>How did you find us?</mat-label>
+				<mat-select >
+					<mat-option *ngFor="let h of howDidYouFindUs, let i = index" [value]="i">
+						{{h}}
+					</mat-option>
+				</mat-select>
+			</mat-form-field>
+
+		</form>
+
+	</mat-dialog-content>
+	
+	<mat-dialog-actions align="center">
+		<!--
+		<button mat-button [mat-dialog-close]="true" cdkFocusInitial>Subscribe</button>
+		-->
+		<button mat-flat-button color="primary" [mat-dialog-close]="true">Subscribe</button>
+	</mat-dialog-actions>
+
+	<mat-dialog-content>
+		<p class="pFooter color_black_inactive">
+			Read our
+			<a class="color_black_inactive">
+				Privacy Policy
+			</a>
+			to see how we protect your data.
+		</p>
+	</mat-dialog-content>
+</div>

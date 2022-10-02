@@ -5,18 +5,18 @@
             <mat-card-title>{{ news.title }}</mat-card-title>
         </mat-card-header>
     
-        <mat-card-content class="menem">
+        <mat-card-content>
             <p>
                 {{ news.textBody }}
             </p>
         </mat-card-content>
     
         <mat-card-footer>
-            <div class="flex space-between">
-                <span class="flex alignItems-center color_black_inactive">
+            <div class="flex justify-content_space-between">
+                <span class="flex align-items_center color_black_inactive">
                     {{ news.date /1000 | date }}
                 </span>
-                <span class="flex alignItems-center">
+                <span class="flex align-items_center">
                     <img mat-card-avatar [src]="news.author_img">
                     {{ news.author_name }}
                 </span>
