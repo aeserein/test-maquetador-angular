@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { TestimonialsRoutingModule } from './testimonials-routing.module';
 import { TestimonialsPageComponent } from './pages/testimonials-page/testimonials-page.component';
 import { TestimonialCardComponent } from './components/testimonial-card/testimonial-card.component';
-import { ExampleMenuComponent } from './menus/example-menu/example-menu.component';
 import { MatCardModule } from "@angular/material/card";
 import { MatButtonModule } from '@angular/material/button';
 import { CarouselModule } from 'ngx-owl-carousel-o';
@@ -13,7 +12,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 	declarations: [
 		TestimonialCardComponent,
 		TestimonialsPageComponent,
-		ExampleMenuComponent,
 	],
 	imports: [
 		CommonModule,
