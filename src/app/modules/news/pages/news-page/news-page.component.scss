@@ -1,20 +1,44 @@
+@import "/src/assets/styles/_media-breakpoint.scss";
+
+/*
 table {
     border-collapse: separate;
     border-spacing: 0;
     height: 200px;
+    margin-top: 30px;
+    columns: 2;
+
+    @include xs {
+        margin-top: 40px;
+        columns: 1;
+    }
 }
 td {
     border-left: 10px solid transparent;
     border-right: 10px solid transparent;
 }
+*/
+.goodAndWellMaintainedLibrary {
+    display: flex;
+    padding: 10px 0px;
+    @include xs {
+        flex-direction: column;
+        padding: 40px 0px;
+    }
+}
 .tdNews {
-    border-left: none;
-    width: 75%;
+    flex: 1;
     padding-right: 7%;
+    @include xs {
+        width: 100%;
+        padding: 0;
+    }
 }
 .tdNewsletter {
-    border-right: none;
-    width: 25%;
+    width: calc(25% - 15px);
+    @include xs {
+        width: 100%;
+    }
 }
 .tdNews, .tdNewsletter {
     vertical-align: top;

@@ -1,7 +1,7 @@
 .testimony {
-    max-width: 350px;
+    max-width: 360px;
 }
-.testimonyContent {
+mat-card mat-card-content {
     height: 160px;
 }
 .mat-card-content {
@@ -10,4 +10,27 @@
 }
 .mat-card {
 	padding: 19px !important;
+}
+.mat-card-avatar {
+	height: 40px !important;
+	width: 40px !important;
+}
+.headerWrapper {
+	display: flex;
+}
+.mat-card-header {
+	flex: 1;
+}
+.mat-card-title {
+	margin-bottom: 7px !important;
+	margin-top: -2px !important;
+}
+.mat-card-subtitle {
+	margin-bottom: 13px !important;
+}
+.icon {
+	display: block;
+	width: 30px !important;
+	height: 30px !important;
+	margin-left: 12px;
 }

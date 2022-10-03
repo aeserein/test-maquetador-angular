@@ -1,16 +1,19 @@
-<form action="">
-	<mat-grid-list cols="4" rowHeight="100px" gutterSize="20px">
+<form (submit)="onSubmit($event)">
 
-		<mat-grid-tile colspan="2">
-			<mat-form-field class="fullWidth noUpperPadding" appearance="fill" floatLabel='never'>
-				<input matInput type="search" placeholder="Search...">
+	<mat-grid-list [cols]="breakpoint" [rowHeight]="rowHeight" gutterSize="20px" (window:resize)="setSizes()">
+
+		<mat-grid-tile [colspan]="bigCol">
+			<mat-form-field class="fullWidth" appearance="outline" floatLabel='never'>
+				<mat-label>Search...</mat-label>
+				<input matInput type="search">
 				<mat-icon matPrefix>search</mat-icon>
 			</mat-form-field>
 		</mat-grid-tile>
 
-		<mat-grid-tile colspan="1">
-			<mat-form-field class="fullWidth noUpperPadding" appearance="fill">
-				<mat-select [(value)]="selectedLanguage">
+		<mat-grid-tile [colspan]="smallCol">
+			<mat-form-field class="fullWidth" appearance="outline">
+				<mat-label>Language</mat-label>
+				<mat-select>
 					<mat-option *ngFor="let l of languages, let i = index" [value]="i">
 						{{l}}
 					</mat-option>
@@ -18,9 +21,10 @@
 			</mat-form-field>
 		</mat-grid-tile>
 
-		<mat-grid-tile colspan="1">
-			<mat-form-field class="fullWidth noUpperPadding" appearance="fill">
-				<mat-select [(value)]="selectedCourse">
+		<mat-grid-tile [colspan]="smallCol">
+			<mat-form-field class="fullWidth" appearance="outline">
+				<mat-label>Course</mat-label>
+				<mat-select>
 					<mat-option *ngFor="let c of courses, let i = index" [value]="i">
 						{{c}}
 					</mat-option>
@@ -29,4 +33,5 @@
 		</mat-grid-tile>
 
 	</mat-grid-list>
+
 </form>

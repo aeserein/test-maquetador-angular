@@ -1,8 +1,12 @@
+@import "/src/assets/styles/_media-breakpoint.scss";
+
 div {
     height: 350px;
     border-radius: 10px;
     font-size: 22px;
-    cursor: pointer;
+    @include xs {
+        height: 220px;
+    }
 }
 p {
     transform: translateY(-6px);

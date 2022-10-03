@@ -1,15 +1,29 @@
+@import "/src/assets/styles/_media-breakpoint.scss";
+
 .wrapper {
     padding: 30px 40px 10px 40px;
+    @include xs {
+        padding: 0;
+    }
 }
 h1 {
     margin-bottom: 40px;
+    @include xs {
+        margin-bottom: 5px;
+    }
 }
 button {
     height: 45px;
     width: 400px;
+    @include xs {
+        height: 40px;
+    }
 }
 .mat-form-field {
-    margin-bottom: 0.5em;
+    margin: 0 0 0.5em 0;
+    @include xs {
+        margin: 0px 0 -5px 0;
+    }
 }
 .pFooter {
     font-size: 12px;

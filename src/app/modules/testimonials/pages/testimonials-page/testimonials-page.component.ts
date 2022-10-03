@@ -42,44 +42,49 @@ export class TestimonialsPageComponent implements OnInit {
 
 	private loadMockData() : void {
 		this.testimoniesMock[0] = new Testimony(
-			"https://material.angular.io/assets/img/examples/shiba1.jpg",
+			"/assets/img/avatars/stock_1.jpg",
 			"Nancy Briggs",
 			"Practitioner",
 			"I now understand the power of Lorem ipsum for healing the body, mind and spirit. I'm very fortunate to connect with certified Lorem ipsum practitioner Nancy Briggs. My 13-year-old son had severe depression and also an invasive anxiety has plagued him.",
 			new Date().getTime(),
-			"Fear/ Phobia- Afraid to Drive"
+			"Fear/ Phobia- Afraid to Drive",
+			"/assets/img/icons/testimony_icon_1.png"
 		);
 		this.testimoniesMock[1] = new Testimony(
-			"https://material.angular.io/assets/img/examples/shiba1.jpg",
+			"/assets/img/avatars/stock_2.jpg",
 			"Adreia Bin",
 			"Member",
 			"Quando recebi minha 1 sessão de enterprise no inicio da minha formação, a primeira coisa que me veio a cabeça foi...noooossaaa isso é magnifico e na mesma semana testei em meu filho de 8 anos que até então apresentava enurese noturna e já havia testado varias outras técnicas. Fazem 2 meses que fiz e com apenas 3 sessões essa questão dele já foi solucionada. Isso me mostra mais ainda que estou no caminho certo. Gratidão.",
 			new Date().getTime(),
-			"Maravilhoso"
+			"Maravilhoso",
+			"/assets/img/icons/testimony_icon_2.png"
 		);
 		this.testimoniesMock[2] = new Testimony(
-			"https://material.angular.io/assets/img/examples/shiba1.jpg",
+			"/assets/img/avatars/stock_3.jpg",
 			"Charlene Cooper",
 			"Member",
 			"I received this lovely email from the handler of one of the CARDA Search & Rescue canines, a group I volunteer with to aid in the release of secondary PTSD.",
 			new Date().getTime(),
-			"Search & Rescue Canine"
+			"Search & Rescue Canine",
+			"/assets/img/icons/testimony_icon_1.png"
 		);
 		this.testimoniesMock[3] = new Testimony(
-			"https://material.angular.io/assets/img/examples/shiba1.jpg",
-			"NOMBRE 4",
-			"OCUPACIÓN 4",
+			"/assets/img/avatars/stock_4.jpg",
+			"Elise Staffan",
+			"Therapist",
 			"I now understand the power of Lorem ipsum for healing the body, mind and spirit. I'm very fortunate to connect with certified Lorem ipsum practitioner Nancy Briggs. My 13-year-old son had severe depression and also an invasive anxiety has plagued him.",
 			new Date().getTime(),
-			"SECTOR 4"
+			"SECTOR 4",
+			"/assets/img/icons/testimony_icon_2.png"
 		);
 		this.testimoniesMock[4] = new Testimony(
-			"https://material.angular.io/assets/img/examples/shiba1.jpg",
-			"NOMBRE 5",
-			"OCUPACIÓN 5",
-			"I now understand the power of Lorem ipsum for healing the body, mind and spirit. I'm very fortunate to connect with certified Lorem ipsum practitioner Nancy Briggs. My 13-year-old son had severe depression and also an invasive anxiety has plagued him.",
+			"/assets/img/avatars/stock_5.jpg",
+			"Joan Mattis",
+			"Gardener",
+			"I received this lovely email from the handler of one of the CARDA Search & Rescue canines, a group I volunteer with to aid in the release of secondary PTSD.",
 			new Date().getTime(),
-			"SECTOR 5"
+			"SECTOR 5",
+			"/assets/img/icons/testimony_icon_1.png"
 		);
 	}
 }

@@ -8,6 +8,10 @@
 	display: flex;
 	justify-content: center;
 	padding: 10px 0px 20px 0px;
+
+	@include xs {
+		padding: 20px 0px 40px 0px;
+	}
 }
 
 .owl-carousel {
@@ -16,10 +20,18 @@
 .owl-nav {
 	position: absolute;
 	top: calc(50% - 50px);
-	width: calc(100% + 80px);
-	left: -40px;
+	width: calc(100% + 100px);
+	left: -50px;
 	display: flex;
 	justify-content: space-between;
+	pointer-events: none;
+
+	@include xs {
+		width: calc(100% - 30px);
+		left: 15px;
+		top: unset;
+		bottom: 0;
+	}
 }
 .owl-prev, .owl-next {
 	width: 50px;
@@ -32,6 +44,13 @@
 	display: flex;
 	font-size: 30px !important;
 	color: $color_primary_400 !important;
+	pointer-events: all;
+
+	@include xs {
+		width: 38px;
+		height: 38px;
+		padding: 0 !important;
+	}
 }
 .owl-prev:hover, .owl-next:hover {
 	background: $color_primary_200 !important;
@@ -40,7 +59,12 @@
 	background-color: $black_inactive;
 	height: 15px;
 	width: 15px;
+
+	@include xs {
+		height: 12px;
+		width: 12px;
+	}
 }
 .owl-theme .owl-dots .owl-dot.active span {
-	background-color: $color_primary_A400;
+	background-color: $color_primary_400;
 }

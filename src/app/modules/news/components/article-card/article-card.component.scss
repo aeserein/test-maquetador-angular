@@ -1,17 +1,35 @@
+@import "/src/assets/styles/_media-breakpoint.scss";
+@import "/src/assets/styles/_typography.scss";
+
 mat-card {
 	display: flex;
 	padding: 0;
-	margin-bottom: 20px;
+	margin-bottom: 22px;
+
+	@include xs {
+		flex-direction: column-reverse;
+		margin-bottom: 40px;
+	}
 }
 .mat-card-header {
 	margin: 0px -16px;
 }
 
 .mat-card-content {
-	margin-bottom: 8px;
+	height: 42px;
+	margin-bottom: 0;
+
+	@include xs {
+		margin-bottom: 15px;
+	}
+
+	p {
+		@include line-clamp(2);
+	}
 }
 .mat-card-title {
-	margin-bottom: 6px;
+	margin-bottom: 4px;
+	font-size: 22px;
 }
 .card_content {
 	flex: 1;
@@ -19,13 +37,27 @@ mat-card {
 .imageWrapper {
 	width: 24%;
 	margin-left: 20px;
+	border-radius: 5px;
+	position: relative;
+	overflow: hidden;
+	@include xs {
+		margin: 0px;
+		width: 100%;
+		margin-bottom: 15px !important;
+	}
 }
 .image {
+	position: absolute;
+	top: 0;
 	width: 100%;
 	display: block;
-	border-radius: 5px;
 }
-
+.aspectRatio {
+	padding-top: 66%;
+	@include xs {
+		padding-top: 52%;
+	}
+}
 .mat-card-avatar {
 	width: 24px;
 	height: 24px;

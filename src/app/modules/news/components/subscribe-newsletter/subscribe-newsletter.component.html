@@ -1,4 +1,4 @@
-<div class="bg_primary_500 flex align-items_center" (click)="openDialog()">
+<div class="bg_primary_500 flex align-items_center cursor_pointer" (click)="openDialog()" [@hoverAnimation]="hoverState" (mouseenter)="bHover=true" (mouseleave)="bHover=false">
     <p class="color_white_high_emphasis text-align_center fw500 margin_auto">
         Subscribe
         <br>

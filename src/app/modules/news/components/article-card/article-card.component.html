@@ -1,22 +1,24 @@
-<mat-card class="mat-elevation-z0">
+<mat-card class="mat-elevation-z0 cursor_pointer" (mouseenter)="bHover = true" (mouseleave)="bHover = false">
 
     <div class="card_content">
         <mat-card-header>
-            <mat-card-title>{{ news.title }}</mat-card-title>
+            <mat-card-title class="fw700 color_black_high_emphasis" [@hoverAnimation]="hoverState">
+                {{ news.title }}
+            </mat-card-title>
         </mat-card-header>
     
         <mat-card-content>
-            <p>
+            <p class="color_black_medium_emphasis">
                 {{ news.textBody }}
             </p>
         </mat-card-content>
     
         <mat-card-footer>
             <div class="flex justify-content_space-between">
-                <span class="flex align-items_center color_black_inactive">
-                    {{ news.date /1000 | date }}
+                <span class="flex align-items_center color_black_disabled">
+                    {{ news.date | date: "short" }}
                 </span>
-                <span class="flex align-items_center">
+                <span class="flex align-items_center color_black_medium_emphasis">
                     <img mat-card-avatar [src]="news.author_img">
                     {{ news.author_name }}
                 </span>
@@ -25,6 +27,7 @@
     </div>
     
     <div class="imageWrapper">
+        <div class="aspectRatio"></div>
         <img class="image" [src]="news.img">
     </div>
     

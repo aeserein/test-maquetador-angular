@@ -4,7 +4,6 @@ import { NewsRoutingModule } from './news-routing.module';
 import { NewsPageComponent } from './pages/news-page/news-page.component';
 import { ArticlePageComponent } from './pages/article-page/article-page.component';
 import { ArticleCardComponent } from './components/article-card/article-card.component';
-import { ExampleModalComponent } from './modal/example-modal/example-modal.component';
 import { NewsletterModalComponent } from './modal/newsletter-modal/newsletter-modal.component';
 import { UserInputsComponent } from './components/user-inputs/user-inputs.component';
 import { MatGridListModule } from '@angular/material/grid-list'; 
@@ -22,7 +21,6 @@ import { MatButtonModule } from '@angular/material/button';
 		NewsPageComponent,
 		ArticlePageComponent,
 		ArticleCardComponent,
-		ExampleModalComponent,
 		NewsletterModalComponent,
   		UserInputsComponent,
 		NewsListComponent,

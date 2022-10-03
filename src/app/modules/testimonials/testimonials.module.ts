@@ -21,7 +21,7 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 		MatCardModule,
 		MatButtonModule,
 		CarouselModule,
-		FontAwesomeModule
+		FontAwesomeModule,
 	],
 	exports: [
 		TestimonialsPageComponent

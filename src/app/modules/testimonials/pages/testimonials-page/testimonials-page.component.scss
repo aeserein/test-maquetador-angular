@@ -8,8 +8,21 @@
     left: 10%;
     background-color: $color_accent_50;
     border-radius: 20px;
+
+    @include xs {
+        width: 200%;
+        left: -50%;
+    }
 }
 .carousel_wrapper {
     position: relative;
     padding-bottom: 10px;
+
+    @include xs {
+        padding-bottom: 35px;
+    }
+}
+
+h1 {
+    margin: 0.5em 0 1em 0;
 }

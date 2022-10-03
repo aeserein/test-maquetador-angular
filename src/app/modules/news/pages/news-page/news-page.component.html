@@ -5,21 +5,16 @@
 
     <app-user-inputs></app-user-inputs>
 
-    <br>
-    <br>
-
     <!--
         Esto se debería hacer con mat-grid-list, si por consigna hay que
         usar material design, pero tiene una variable rowHeight rota hace años
     -->
-    <table class="fullWidth">
-        <tr>
-            <td class="tdNews">
-                <app-news-list></app-news-list>
-            </td>
-            <td class="tdNewsletter">
-                <app-subscribe-newsletter></app-subscribe-newsletter>
-            </td>
-        </tr>
-    </table>
+    <div class="goodAndWellMaintainedLibrary fullWidth">
+        <div class="tdNews">
+            <app-news-list></app-news-list>
+        </div>
+        <div class="tdNewsletter">
+            <app-subscribe-newsletter></app-subscribe-newsletter>
+        </div>
+    </div>
 </div>
