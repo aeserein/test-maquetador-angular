@@ -23,8 +23,14 @@
 }
 
 // Primary
+.color_primary_100 {
+	color: $color_primary_100;
+}
 .bg_primary_500 {
 	background-color: $color_primary_500;
+}
+.bg_primary_700 {
+	background-color: $color_primary_700;
 }
 
 // White

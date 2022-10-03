@@ -46,11 +46,21 @@ mat-card {
 		margin-bottom: 15px !important;
 	}
 }
+.readMore {
+	position: absolute;
+	top: 50%;
+	z-index: 3;
+}
+.imageOverlay {
+	position: absolute;
+	z-index: 2;
+}
 .image {
 	position: absolute;
 	top: 0;
 	width: 100%;
 	display: block;
+	z-index: 1;
 }
 .aspectRatio {
 	padding-top: 66%;

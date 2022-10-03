@@ -27,6 +27,8 @@
     </div>
     
     <div class="imageWrapper">
+        <span [@readMore]="hoverState" class="color_white_high_emphasis fw700 fullWidth text-align_center readMore">[ Read more ]</span>
+        <div [@imageOverlay]="hoverState" class="fullWidth fullHeight bg_primary_700 imageOverlay"></div>
         <div class="aspectRatio"></div>
         <img class="image" [src]="news.img">
     </div>
