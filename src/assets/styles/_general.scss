@@ -48,14 +48,6 @@
 	-webkit-transition: $animation;
 }
 
-.link {
-	cursor: pointer;
-	display: inline-block;
-	position: relative;
-	text-decoration: none;
-	color: $color_primary_500;
-}
-
 .hover-linear {
 	&:after {
 		content: "";

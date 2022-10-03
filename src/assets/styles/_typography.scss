@@ -88,6 +88,14 @@ small,
 	font-size: 0.8em;
 }
 
+.link {
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+	text-decoration: underline;
+	color: $black_inactive;
+}
+
 textarea {
 	font-family: $font_title;
 	color: $black_high_emphasis;
@@ -130,6 +138,10 @@ button {
 }
 .line-height_unset {
 	line-height: unset;
+}
+
+.underline {
+	text-decoration: underline;
 }
 
 @mixin line-clamp($lines) {
